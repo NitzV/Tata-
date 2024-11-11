@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tata Motors - Connecting Aspirations</title>
+  <link rel="icon" href="img/tata.256x171.png">
+  <style>
+    /* Global Styles */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ccc;
+      color: goldenrod;
+      text-align: center;
+    }
+
+    /* Header Styles */
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 160px;
+      height: 140px;
+      margin: 20px;
+      border-radius: 55%;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: goldenrod;
+    }
+
+    .hamburger {
+      display: none; /* Hide by default for larger screens */
+      flex-direction: column;
+      cursor: pointer;
+      width: 30px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .hamburger div {
+      width: 100%;
+      height: 4px;
+      background-color: goldenrod;
+      margin: 5px 0;
+      transition: transform 0.3s ease;
+    }
+
+    /* Show Hamburger Icon on Small Screens */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* Active State for the Hamburger */
+    .hamburger.active div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+    /* Section Styles */
+
+    section {
+      background-color: #f7f7f7;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    section img {
+      width: 100%;
+      height: 200px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    /* Link Styles */
+
+    a {
+      text-decoration: none;
+      color: #337ab7;
+    }
+
+    a:hover {
+      color: #23527c;
+    }
+
+    /* Footer Styles */
+
+    footer {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+      color: goldenrod;
+    }
+
+    footer h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    footer h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleHamburger(this)">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <img src="img/tata.256x171.png" alt="Tata Motors Logo">
+    <h1>TATA MOTORS</h1>
+    <p>Connecting Aspirations</p>
+  </header>
+  <hr>
+  <section>
+    <h2>About Us</h2>
+    <p>
+      Part of the USD 165 billion Tata Group, Tata Motors, a USD 44 billion organisation, is a leading global automobile manufacturer of cars, utility vehicles, pick-ups, trucks and buses. We are India’s market leader in commercial vehicles and amongst the top three in the passenger vehicles market. We prioritise human centricity with technological prowess and engineering excellence to make cargo and passenger mobility safer, smarter and greener.
+    </p>
+  </section>
+  <hr>
+  <section>
+    <h2>Our Businesses</h2>
+    <h3>
+      Cutting-edge designs, quest to excel and promise to delight customers keeps us ahead of the curve.
+      Our cars and SUVs offer best-in-class safety and superior driving experience.
+    </h3>
+    <img src="img/Curvv.jpeg" alt="Tata Curvv">
+  </section>
+  <section>
+    <h1>Photo Gallery</h1>
+    <h2>| Safari | Harrier | Curvv | Nexon | Altroz | Punch | Tiago | Tigor |</h2>
+    <p>
+      At Tata Motors, we've always been driven by a passion to create innovative and exciting cars that set new benchmarks in the industry. From the iconic Tata Nano, the people's car that revolutionized the Indian automotive landscape, to our latest offerings like the Tata Nexon, Harrier, and Safari, we've consistently pushed the boundaries of design, engineering, and technology. Our cars are not just modes of transportation, but reflections of our customers' personalities and aspirations. With a focus on sustainability, safety, and performance, we're committed to delivering exceptional driving experiences that exceed our customers' expectations. As we continue to expand our portfolio and enter new markets, we remain true to our core values of innovation, quality, and customer-centricity, always striving to make a positive impact on the lives of our customers and the communities we serve.
+    </p>
+  </section>
+  <section>
+    <img src="img/Curvv Ev.jpeg" alt="Tata Curvv Ev">
+    <script>
+      function toggleHamburger(element) {
+        element.classList.toggle('active');
+      }
+    </script>
+  </body>
+  </html>
+   
